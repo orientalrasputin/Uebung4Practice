@@ -1,0 +1,74 @@
+= Softwareentwicklung im Team: Praktische Übung 4
+:icons: font
+:icon-set: fa
+:experimental:
+:source-highlighter: rouge
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:stem: latexmath
+endif::[]
+
+== Vorbereitung 
+
+Die Vorbereitungsarbeiten müssen Sie *vor der praktischen Übung* abschließen. 
+
+Wir erwarten von Ihnen,
+
+* dass Sie sich mit HTML befasst haben
+* dass Sie eine HTML Seite mithilfe von Bootstrap und CSS stylen können
+
+== Ziele der Übung
+
+Diese Übung dient dazu den Umgang mit HTML zu vertiefen. 
+
+== Ablauf der Übung
+
+. Schalten Sie *mindestens* das Mikrofon, aber besser auch die Kamera, ein 
+. Am Anfang gibt es eine kurze Vorstellungsrunde 
+. Es wird festgelegt, in welcher Reihenfolge die "Driver" Rolle übernommen wird
+. Die erste Person teilt Ihren Screen und übernimmt mithilfe von `mob` die Session
+. Es wird an der Problemstellung gemeinsam gearbeitet nach den Regeln des Mob Programmings 
+. Nach ca. der Hälfte der Zeit gibt es ein Feedback durch die Tutorin oder den Tutor
+. Es wird weiter an der Problemstellung gearbeitet
+. ca. 10 Minuten vor Ende der Session bekommen Sie Ihre Abschlussbewertung 
+
+NOTE: Diese praktische Übung wird für die Zulassung gewertet. Sie müssen vorbereitet sein und einen hinreichenden Beitrag leisten. 
+
+== Aufgabe 
+
+Die Universitätsklinik will eine Webanwendung entwickeln um COVID-19 Exposition zu tracken. Dazu werden die Kontaktpersonen einer positiv auf COVID-19 getesteten Person erfasst und in einer Kontaktliste aufgeführt. Eine Kontaktliste bezieht sich immer auf eine positiv getestete Person, den sogenannten Index. In dieser Übung sollen Sie die Eingabeformulare und Sichten auf die Kontaktlisten entwickeln. Verwenden Sie für das Styling die Bootstrap Bibliothek.
+
+=== Das Eingabeformular (kontakt.html)
+
+Das Eingabeformular soll folgende Felder haben:
+* Name
+* Vorname
+* Straße
+* Hausnummer
+* Postleitzahl
+* Stadt
+* Telefon
+* eMail
+* Datum der Exposition
+* Dauer der Exposition 
+
+Auf dem Formular sollen oben die Daten (Vorname, Name, Anschrift) des Index stehen und das Formular soll ein hidden Feld haben mit einer UUID, die den Index identifiziert. Sie können sich für den Index feste Daten ausdenken und diese in die HTML Datei schreiben, die Daten sollen aber später ersetzt werden, müssen also geeignet durch Tags markiert werden. 
+
+NOTE: Wenn Sie die Daten mithilfe von CSS gezielt stylen können, dann können Sie die Daten auch nachträglich ersetzen.
+
+=== Die Kontaktliste (liste.html)
+
+Die Kontaktliste ist eine übersichtliche Darstellung der Kontakte einer Person. Sie enthält den Expositionszeitpunkt, Vorname, Name und eMail der Kontaktperson. Die Mailadresse soll verlinkt werden, da dass das Standard-Mailprogramm geöffnet wird, wenn der Link angeklickt wird. Füllen Sie die Ansicht auf mit 5 bis 10 Kontaktpersonen, deren Daten Sie sich ausdenken können. Die Seite soll auch die Daten (Vorname, Name, Anschrift) des Index anzeigen. Wie bei dem Formular müssen Sie sicherstellen, dass die Datenfelder später ersetzt werden können. 
+
+=== Die Übersicht (uebersicht.html)
+
+Die Übersichtseite dient dazu die einzelnen Kontaktlisten zu verwalten. Es sollen dort Links für die einzelnen Kontaktlisten aufgeführt werden. Für jede Kontaktliste werden Vorname und Name des Index angezeigt.
+
+== Verhaltensregeln
+
+Wir erwarten von Ihnen einen respektvollen Umgang miteinander. Es gilt grundsätzlich bei uns der https://berlincodeofconduct.org/de/[Berlin Code of Conduct]. Die TutorInnen haben die Aufgabe, die Einhaltung der Regeln zu überwachen und können bei Verstößen gegen den Verhaltenskodex Personen aus der praktischen Übung entfernen.   
+
